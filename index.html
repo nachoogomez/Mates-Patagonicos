@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mates Patagonicos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="header-container">
+                <a href="./index.html">Mates Patagonicos</a>
+                <div class="navbar">  
+                        <ul class="navbar-list">
+                            <li><a href="#hero">Inicio</a></li>
+                            <li><a href="#about-us">Sobre Nosotros</a></li>
+                            <li><a href="#contact-us">Contactanos</a></li>
+                            <li><a href="#products">Productos</a></li>
+                            <li><a href="./login.html" class="login-phone">Login</a></li>
+                        </ul>
+                </div>
+                <div class="btn-nav">
+                    <a href="./login.html" class="login-btn">Login</a>
+                    <div class="menu-label">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>  
+                    <div class="cart-label">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </div>
+                </div>
+                
+
+                <div class="cart">
+
+                    <h2>Tus Productos</h2>
+                
+                    <div class="cart-container">
+                            
+                    </div>
+                
+                    <div class="cart-total">
+                        <p>Total:</p>
+                        <span class="total"></span>
+                    </div>
+                    <button class="btn-buy">Comprar</button>
+                    <button class="btn-delete">Vaciar carrito</button>
+                </div>  
+            </div>
+        </nav>   
+    </header>
+    <main>
+       <section id="hero">
+        <div class="hero-info">
+            <h1>La mayor variedad de mates y bombillas de todo el país</h1>
+            <a href="#">Ir a la Tienda <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div> 
+       </section>    
+       <section id="about-us">
+            <h1>Nuestros Combos</h1>
+            <div class="about-card">
+                <div class="card mates">
+                    <a href="#">Mates</a>
+                </div>
+                <div class="card yerba">
+                    <a href="#">Yerba</a>
+                </div>
+                <div class="card accessories">
+                    <a href="#">Accesorios</a>
+                </div>
+            </div>
+            <div class="promos">
+                <h2>¿Porqué confiar en nosotros?</h2>
+                <div class="promo-container">
+                    <div class="promo-card">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        <h3>3 CUOTAS SIN INTERÉS</h3>
+                        <p>CON TODAS LAS TARJETAS</p>
+                    </div>
+                    <span class="divider"></span>
+                    <div class="promo-card">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        <h3>10% DESCUENTO</h3>
+                        <p>ABONANDO CON TRANSFERENCIA BANCARIA</p>
+                    </div>
+                    <span class="divider"></span>
+                    <div class="promo-card">
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                        <h3>ENVÍOS A TODO EL PAÍS</h3>
+                        <p>ENVIO GRATIS SUPERANDO LOS 50 USD</p>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <section id="contact-us">
+            <h3 class="contact-title">Contactanos</h3>
+            <form class="contact">
+                <div class="contact-input">
+                    <input required="" placeholder="Full Name" class="form-field" type="input">
+                    <label class="form-label" for="name">Nombre completo</label>
+                </div>
+                <div class="contact-input">
+                    <input type="email" id="email" class="form-field" placeholder="Email" required>
+                    <label for="email" class="form-label">Email</label> 
+                </div>
+                <div class="contact-input">
+                    <input type="text" id="phone" class="form-field" placeholder="Telefono (+11 999 999)" required>
+                    <label for="phone" class="form-label">Telefono</label>
+                </div>
+                <div class="contact-input">
+                    <input type="text" id="phone" class="form-field" placeholder="Escribe un mensaje" required>
+                    <label for="phone" class="form-label">Escribe un mensaje</label>
+                </div>
+                <button class="contact-button">Enviar</button>
+            </form>
+                
+       </section>
+       <section id="products">
+            <h2>Nuestros Productos</h2>
+            <!-- Categories JS -->
+            <div class="categories">
+                <button class="category active">Todas</button>
+                <button class="category" data-category="mate">Mates</button>
+                <button class="category" data-category="yerba">Yerba</button>
+                <button class="category" data-category="bombilla">Bombillas</button>
+                <button class="category" data-category="accesorios">Accesorios</button>
+            </div>
+
+            <!-- Products JS-->
+            <div class="products-container">
+                
+            </div>
+            <button class="btn-load">Ver Más</button>
+       </section>
+       <footer>
+            <div class="footer-links">
+                <p>Mates patagonicos since 2001</p>
+                <div class="footer-social">
+                    <p>Nuestras Redes sociales</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/matespatagonicos/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>&#169;Copyright 2023 Ignacio Gomez All Rights Reserved</p>
+       </footer>
+       <div class="add-modal"></div>
+
+    </main>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
+

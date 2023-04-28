@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mates Patagonicos</title>
+    <link rel="stylesheet" href="./assets/login.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="header-container">
+                <a href="./index.html">Mates Patagonicos</a>
+                <a href="./index.html" class="back">Volver al inicio</a>
+        </nav>   
+    </header>
+    <main>
+        <section class="login">
+            <div class="login-box">
+                <h3 class="login-btn active-btn" onclick="toggleLogin()">Login</h3>
+                <h3 class="register-btn" onclick="toggleRegister()">Register</h3>
+            </div>
+            <div class="social-login">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    Login in with facebook
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    Log in with Google
+                  </a>
+            </div>
+            <form class="form-login " id="form-login">
+                <div class="form--field">
+                    <input
+                    type="email"
+                    placeholder="Email"
+                    class="form-input"
+                    id="email"
+                    autocomplete="off"
+                    />
+                    <small></small>
+                </div>
+                <div class="form--field">
+                    <input
+                    type="password"
+                    placeholder="Password"
+                    class="form-input"
+                    id="password"
+                    autocomplete="off"
+                    />
+                    <small></small>
+                </div>
+                <input type="submit" class="form-submit-btn" id="ingresar" value="Ingresar" />
+            </form>
+            <form class="form-register hidden" id="form-register">
+                <div class="form--field">
+					<input
+						type="text"
+						placeholder="Username"
+						class="form-input"
+						id="username"
+						autocomplete="off"
+					/>
+					<small></small>
+				</div>
+                <div class="form--field">  
+                    <input
+                    type="email"
+                    placeholder="Email"
+                    class="form-input"
+                    id="email-register"
+                    autocomplete="off"
+                    />
+                    <small></small>
+                </div>
+                <div class="form--field">   
+                    <input
+                    type="password"
+                    placeholder="Password"
+                    class="form-input"
+                    id="password-register"
+                    autocomplete="off"
+                    />
+                    <small></small>
+                </div>
+                <div class="form--field">  
+                    <input
+                    type="text"
+                    placeholder="Telefono"
+                    class="form-input"
+                    id="phone"
+                    autocomplete="off"
+                    />
+                    <small></small>
+                </div>
+                <input type="submit" class="form-submit-btn" id="registrar" value="Registrarse" />
+            </form>
+        </section>
+        <footer>
+            <div class="footer-links">
+                <p>Mates patagonicos since 2001</p>
+                <div class="footer-social">
+                    <p>Nuestras Redes sociales</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/matespatagonicos/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>&#169;Copyright 2023 Ignacio Gomez All Rights Reserved</p>
+        </footer>
+       <div class="add-modal"></div>
+    </main>
+    <script src="./validation.js"></script>
+</body>
+</html>
